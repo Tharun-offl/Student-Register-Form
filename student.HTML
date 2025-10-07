@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    <center>
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <form id="titles">
+
+            <input id="names" type="text" placeholder="Name" required>
+
+            <input id="ages" type="number" placeholder="Age" required>
+            <select id="gender">
+                <option>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <select id="Degree">
+                <option>Select Degree</option>
+                <option value="B.E./B.Tech">B.E./B.Tech</option>
+                <option value="BBA">BBA</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Arch">B.Arch</option>
+            </select>
+
+            <input id="branch" type="text" placeholder="Branch" required>
+            <input id="cell" type="number" placeholder="Phone Number" required>
+            <input type="email" id="emails" placeholder="Enter E-mail">
+            <button type="submit" id="saves">Save</button>
+
+        </form>
+    </center>
+    <button id="review" onclick="reviews()"></button>
+    <center>
+        <table id="copy">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                    <th>DEGREE</th>
+                    <th>BRANCH</th>
+                    <th>PHONE no.</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+
+            <tbody> </tbody>
+        </table>
+    </center>
+
+</body>
+<script src="Student.JS"></script>
+
+</html>
