@@ -3,7 +3,6 @@
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-
     const name = document.getElementById("names").value;
     const age = document.getElementById("ages").value;
     const degre = document.getElementById("Degree").value;
@@ -29,6 +28,19 @@
     // Reset the form
     form.reset();
   });
+   const save=document.getElementById("saves");
+   save.addEventListener('mousedown', () => {
+    save.style.backgroundColor = 'green';
+  });
+
+  save.addEventListener('mouseup', () => {
+    save.style.backgroundColor = '';
+  });
+
+  // Also reset if mouse leaves the button while pressed
+  save.addEventListener('mouseleave', () => {
+    save.style.backgroundColor = 'rgb(32, 167, 32)';
+   })
 
   function del(event) {
     // Remove entire row
