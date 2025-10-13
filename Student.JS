@@ -1,4 +1,4 @@
- const form = document.getElementById("titles");
+const form = document.getElementById("titles");
   const body = document.getElementById("copy").querySelector("tbody");
 
   form.addEventListener("submit", function (event) {
@@ -21,8 +21,9 @@
         <td>${branchs}</td>
         <td>${cell}</td>
         <td>${email}</td>
-        <td><button onclick="del(event)">Delete</button></td>
+        <td><button onclick="del(event)"id="delete">Delete</button></td>
       `;
+      //selecting td
     body.appendChild(row);
 
     // Reset the form
@@ -41,8 +42,13 @@
   save.addEventListener('mouseleave', () => {
     save.style.backgroundColor = 'rgb(32, 167, 32)';
    })
-
+  let delbtn=document.getElementById("delete")
   function del(event) {
     // Remove entire row
     event.target.parentElement.parentElement.remove();
+  }
+  //select popup 
+  let pop=document.querySelector(".popup");
+  function reviews(event){
+    pop.style.display="block"
   }
