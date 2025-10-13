@@ -10,12 +10,11 @@ body {
 
 form {
     background:transparent;
-  
     padding: 20px;
     border-radius: 10px;
     max-width: 400px;
     margin: auto;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 20px 20px rgba(2, 2, 2, 2.2);
 }
 form input,form button {
     width: 95%;
@@ -23,6 +22,8 @@ form input,form button {
     margin: 5px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
+    
 }
 form select{
     width: 99%;
@@ -31,19 +32,64 @@ form select{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-1form:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
+
 #copy tr{
-    background-color: white;
+    background:rgb(52, 237, 243);
+    display: none;
 }
 #copy th{
-    padding: 5px;
-    margin: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+   
 }
 #saves{
     background-color:rgb(32, 167, 32);
     border: none;
     color: white;
 }    
+#delete{
+    background-color: red;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin: 3px;
+    font-size: 15px;
+
+}
+#review{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    font-family: ui-serif;
+    font-size: 30px;
+    position: fixed;
+    right: 90px;
+    bottom: 90px;
+    border: none;
+}
+#review:hover{
+    border: solid 1px white;
+}
+.popup{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    display: none;
+
+}
