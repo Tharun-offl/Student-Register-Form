@@ -10,6 +10,24 @@
 
 <body>
     <center>
+        <table id="copy">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                    <th>DEGREE</th>
+                    <th>BRANCH</th>
+                    <th>PHONE no.</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+
+            <tbody> </tbody>
+        </table>
+        </center>
+    <center>
         <h2>STUDENT REGISTRATION FORM</h2>
         <form id="titles">
 
@@ -37,25 +55,11 @@
 
         </form>
     </center>
-    <button id="review" onclick="reviews()"></button>
-    <center>
-        <table id="copy">
-            <thead>
-                <tr>
-                    <th>NAME</th>
-                    <th>AGE</th>
-                    <th>GENDER</th>
-                    <th>DEGREE</th>
-                    <th>BRANCH</th>
-                    <th>PHONE no.</th>
-                    <th>EMAIL</th>
-                    <th>ACTION</th>
-                </tr>
-            </thead>
+    <div class="popup"> </div>
+    <button id="review" onclick="reviews(event)">Review
 
-            <tbody> </tbody>
-        </table>
-    </center>
+    </button>
+   
 
 </body>
 <script src="Student.JS"></script>
